@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ctime | date:"1,F jS"}}</h2>
+<div>
+	<input type="button" id="myField" value="Click me!"/>
+</div>
+<div>
+	<img src="/static/images/zxy.jpg" alt="My Baby"/>
+</div>
+<div class='main'>
+	<table class="gridtable">
+		<tr>
+			<th>维度列表</th><th>参数设置</th><th>操作</th>
+		</tr>
+		{% for step in steps %}
+			<tr>
+				<td>{{ step }}</td>
+				<td>最大限制：<input></input></td>
+				<td><a href='#'>开始</a>&nbsp;&nbsp;<a href='#'>停止</a></td>
+			</tr>
+		{% endfor %}
+	</table>
+</div>
+<p>{{ ctime}}</p>
+{% endblock %}

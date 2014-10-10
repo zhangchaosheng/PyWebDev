@@ -1,0 +1,54 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<script language="JavaScript" type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="/static/js/hello.js"></script>
+
+
+	<style type="text/css">
+		body{
+			margin: 0px auto;
+			padding: 0px;
+			text-align: center;
+		}
+		div.main{
+			background-color: #E6F3F9;
+			margin:0 auto;
+			padding:0;
+			width:1000px;
+			height:800px;
+			text-align:center;
+		}
+
+		table.gridtable {
+			font-family: verdana,arial,sans-serif;
+			font-size:11px;
+			color:#333333;
+			width:1000px;
+			border-width: 1px;
+			border-color: #666666;
+			border-collapse: collapse;
+		}
+		table.gridtable th {
+			border-width: 1px;
+			padding: 8px;
+			border-style: solid;
+			border-color: #666666;
+			background-color: #dedede;
+		}
+		table.gridtable td {
+			border-width: 1px;
+			padding: 8px;
+			border-style: solid;
+			border-color: #666666;
+			background-color: #ffffff;
+		}
+	</style>
+	</head>
+
+	<body>
+		<h1>mi.com</h1>
+		{% block content %}
+		{% endblock %}
+	</body>
+</html>
