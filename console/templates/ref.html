@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#fib_div").click(function(){
+			$('#fib_div').load('refresh');
+		});
+	});
+</script>
+
+<h1> The Fibonacci Sequence </h1>
+<div id="fib_div" onclick="update_fib();">
+	{% include 'fib.html' %}
+</div>
+{% endblock %}
